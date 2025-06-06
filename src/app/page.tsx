@@ -25,12 +25,16 @@ export default function Home() {
                 </div>
               </AnimateOnScroll>
               <AnimateOnScroll>
-                <div className="flex flex-col sm:flex-row sm:items-end gap-4 mb-8">
-                  <h2 className="text-3xl font-bold text-forest">Blue Origin</h2>
-                  <div className="sm:mt-6">
+                <div className="flex flex-col gap-4 mb-8">
+                  <div>
                     <p className="text-2xl font-semibold text-forest">
                       Program Planning and Controls Specialist
                     </p>
+                    <div className="flex items-center gap-2 mt-2">
+                      <h2 className="text-xl font-medium text-forest">Blue Origin</h2>
+                      <span className="text-gray-400">|</span>
+                      <p className="text-lg text-gray-600">In-Space Systems | Blue Ring</p>
+                    </div>
                   </div>
                 </div>
                 <div className="space-y-6 mb-8">
