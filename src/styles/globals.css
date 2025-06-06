@@ -1,0 +1,122 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --forest-green: #2d4739;
+  --light-green: #a5c9a1;
+  --pale-green: #f0f5f0;
+}
+
+::selection {
+  background-color: rgba(45, 71, 57, 0.1);
+}
+
+@layer base {
+  body {
+    @apply bg-white text-gray-900 antialiased;
+  }
+}
+
+@layer utilities {
+  .text-forest {
+    color: var(--forest-green);
+  }
+  
+  .bg-forest {
+    background-color: var(--forest-green);
+  }
+  
+  .border-forest {
+    border-color: var(--forest-green);
+  }
+  
+  .text-light {
+    color: var(--light-green);
+  }
+  
+  .bg-light {
+    background-color: var(--light-green);
+  }
+  
+  .bg-pale {
+    background-color: var(--pale-green);
+  }
+}
+
+@layer components {
+  .btn {
+    @apply px-6 py-3 rounded-none transition-all duration-300 text-sm uppercase tracking-wider font-medium;
+  }
+  
+  .btn-primary {
+    @apply bg-forest text-white;
+  }
+  
+  .btn-primary:hover {
+    opacity: 0.9;
+  }
+
+  .btn-secondary {
+    @apply bg-transparent border-2 border-forest text-forest;
+  }
+  
+  .btn-secondary:hover {
+    @apply bg-forest text-white;
+  }
+
+  .card {
+    @apply bg-white border border-gray-100 transition-all duration-300;
+  }
+  
+  .card:hover {
+    @apply border-forest;
+    opacity: 0.8;
+  }
+
+  .section-heading {
+    @apply text-4xl md:text-5xl font-bold mb-8 uppercase tracking-tight text-forest;
+  }
+
+  .section-container {
+    @apply max-w-7xl mx-auto px-4 py-24 md:py-32;
+  }
+
+  .nav-link {
+    @apply text-gray-600 transition-colors duration-200 uppercase text-sm tracking-wider;
+  }
+  
+  .nav-link:hover {
+    @apply text-forest;
+  }
+}
+
+@layer utilities {
+  .animate-fade-in {
+    animation: fade-in 0.8s ease-out;
+  }
+
+  .animate-slide-up {
+    animation: slide-up 0.8s ease-out;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-up {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+} 
