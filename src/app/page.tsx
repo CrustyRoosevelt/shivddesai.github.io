@@ -80,7 +80,7 @@ export default function Home() {
                       <FaEnvelope className="text-2xl" />
                     </a>
                     <a 
-                      href="https://www.linkedin.com/in/shivdesai/"
+                      href="https://www.linkedin.com/in/shivdesai1/"
                       className="bg-forest text-white p-3 rounded-full hover:scale-110 hover:shadow-lg transition duration-300"
                       target="_blank"
                       rel="noopener noreferrer"
